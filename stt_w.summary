@@ -178,7 +178,7 @@ def summarize_meeting(transcript: str):
 
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o-mini", #gpt 4o-mini
         messages=[
             {"role": "system", "content": "You are a summarization AI that categorizes and summarizes the entire meeting content."},
             {"role": "user", "content": prompt}
